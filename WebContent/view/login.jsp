@@ -22,33 +22,37 @@
     <script type="text/javascript" src="easyui/jquery.min.js"></script>
     <script type="text/javascript" src="h-ui/js/H-ui.js"></script>
     <script type="text/javascript" src="h-ui/lib/icheck/jquery.icheck.min.js"></script>
-
     <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
 
     <script type="text/javascript">
         $(function () {
-            //点击图片切换验证码
+            // 点击图片切换验证码
             $("#vcodeImg").click(function () {
                 this.src = "CpachaServlet?method=loginCapcha&t=" + new Date().getTime();
             });
 
-            //登录
+            // 登录
             $("#submitBtn").click(function () {
                 var data = $("#form").serialize();
                 $.ajax({
                     type: "post",
                     url: "LoginServlet?method=Login",
                     data: data,
-                    dataType: "text", //返回数据类型
+                    // 返回数据类型
+                    dataType: "text",
                     success: function (msg) {
                         if ("vcodeError" == msg) {
                             $.messager.alert("消息提醒", "验证码错误!", "warning");
-                            $("#vcodeImg").click();//切换验证码
-                            $("input[name='vcode']").val("");//清空验证码输入框
+                            // 切换验证码
+                            $("#vcodeImg").click();
+                            // 清空验证码输入框
+                            $("input[name='vcode']").val("");
                         } else if ("loginError" == msg) {
                             $.messager.alert("消息提醒", "用户名或密码错误!", "warning");
-                            $("#vcodeImg").click();//切换验证码
-                            $("input[name='vcode']").val("");//清空验证码输入框
+                            // 切换验证码
+                            $("#vcodeImg").click();
+                            // 清空验证码输入框
+                            $("input[name='vcode']").val("");
                         } else if ("loginSuccess" == msg) {
                             window.location.href = "SystemServlet?method=toAdminView";
                         } else {
@@ -75,8 +79,8 @@
     <h2 style="color: white; width: 400px; height: 60px; line-height: 60px; margin: 0 0 0 30px; padding: 0;">
         学生学籍管理系统</h2>
 </div>
-<div class="loginWraper">
-    <div id="loginform" class="loginBox" style=" background-color: #4d4d4d">
+<div>
+    <div id="loginform" class="loginBox" style=" background-color: #ffffff; box-shadow: 2px 2px 10px #909090">
         <form id="form" class="form form-horizontal" method="post">
             <div class="row cl">
                 <label class="form-label col-3">
@@ -177,27 +181,29 @@
             <div class="mt-20 skin-minimal" style="text-align: center;">
                 <div class="radio-box">
                     <input type="radio" id="radio-2" name="type" checked value="2"/>
-                    <label for="radio-1"><font color="#f0f8ff">学生</font></label>
+                    <label for="radio-1"><font color="#454646">学生</font></label>
                 </div>
                 <div class="radio-box">
                     <input type="radio" id="radio-3" name="type" value="3"/>
-                    <label for="radio-2"><font color="#f0f8ff">教师</font>></label>
+                    <label for="radio-2"><font color="#454646">教师</font></label>
                 </div>
                 <div class="radio-box">
                     <input type="radio" id="radio-1" name="type" value="1"/>
-                    <label for="radio-3"><font color="#f0f8ff">辅导员</font></label>
+                    <label for="radio-3"><font color="#454646">管理员</font></label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="formControls col-8 col-offset-3">
-                    <input id="submitBtn" type="button" class="btn btn-success radius size-L"
+                    <input id="submitBtn" type="button"
+                           class="btn btn-success radius size-L"
                            value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
                 </div>
             </div>
         </form>
     </div>
 </div>
-
+<script src="https://passport.zhihuishu.com/assets/js/three/three.min.js" type="text/javascript"></script>
+<script src="h-ui/js/wallbgcanvas.js" type="text/javascript"></script>
 </body>
 </html>

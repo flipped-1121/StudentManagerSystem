@@ -12,14 +12,6 @@
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-logging.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/ezmorph-1.0.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/FilelLoad.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.annotation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.ejb.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.jms.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.persistence.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.resource.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.servlet.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.servlet.jsp.jar!/" />
-      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.transaction.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/json-lib-2.3-jdk15.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/jsonplugin-0.34.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/jstl.jar!/" />

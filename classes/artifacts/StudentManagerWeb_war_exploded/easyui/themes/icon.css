@@ -113,7 +113,22 @@
 	background:url('icons/user_gray.png') no-repeat center center;
 }
 .icon-user-teacher{
-	background:url('icons/user_red.png') no-repeat center center;
+	background:url('icons/icon_teacher.png') no-repeat center center;
+}
+.icon-select-course{
+	background: url('icons/icon-select-course.png') no-repeat center center;
+}
+.icon-checking-in{
+	background: url('icons/icon-checking-in.png') no-repeat center center;
+}
+.icon-ask-leave{
+	background: url('icons/icon-ask-leave.png') no-repeat center center;
+}
+.icon-grade-list{
+	background: url('icons/icon-grade-list.png') no-repeat center center;
+}
+.icon-grade-statistics{
+	background: url('icons/icon-grade-statistics.png') no-repeat center center;
 }
 .icon-house{
 	background:url('icons/house.png') no-repeat center center;

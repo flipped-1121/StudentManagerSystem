@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AdminDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/AttendanceDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/BaseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ClazzDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/CourseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/LeaveDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/ScoreDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/SelectedCourseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/dao/TeacherDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/filter/LoginFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Admin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Attendance.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Clazz.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Course.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Leave.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Page.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Score.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/SelectedCourse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Student.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/model/Teacher.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/AttendanceServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ClazzServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/CourseServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LeaveServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/LoginServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/PhotoServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/ScoreServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/StudentServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/SystemServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/servlet/TeacherServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/util/CpachaUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/ischoolbar/programmer/util/DbUtil.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

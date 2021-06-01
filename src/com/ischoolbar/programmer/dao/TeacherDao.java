@@ -25,7 +25,8 @@ public class TeacherDao extends BaseDao {
 	}
 	public boolean editTeacher(Teacher teacher) {
 		// TODO Auto-generated method stub
-		String sql = "update s_teacher set name = '"+teacher.getName()+"'";
+		String sql = "update s_teacher set sn = '"+teacher.getSn()+"'";
+		sql += ",name = '" + teacher.getName() + "'";
 		sql += ",sex = '" + teacher.getSex() + "'";
 		sql += ",mobile = '" + teacher.getMobile() + "'";
 		sql += ",qq = '" + teacher.getQq() + "'";

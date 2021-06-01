@@ -160,6 +160,7 @@
 }
 .accordion-noborder .accordion-body {
   border-width: 0 0 1px;
+  margin-bottom: -256px;
 }
 .accordion-collapse {
   background: url('images/accordion_arrows.png') no-repeat 0 0;
@@ -775,6 +776,8 @@
 }
 .layout-split-north {
   border-bottom: 5px solid #E6EEF8;
+  margin-top: 0px;
+  height: 48px;
 }
 .layout-split-south {
   border-top: 5px solid #E6EEF8;

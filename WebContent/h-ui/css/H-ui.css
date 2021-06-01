@@ -249,7 +249,7 @@ address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}
 input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
 input,button{overflow: visible;vertical-align:middle;outline:none}
 input[type="submit"],input[type="reset"],input[type="button"],input[type="text"],input[type="password"]{-webkit-appearance:none;outline:none}
-body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,"WenQuanYi Micro Hei",Verdana,sans-serif,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
+body,th,td,button,input,select,textarea{font-family:Noto Serif SC, sans-serif,"\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale}
 body{line-height:1.6}
 h1,h2,h3,h4,h5,h6{font-size:100%}
 a,area{outline:none;blr:expression(this.onFocus=this.blur())}
@@ -764,7 +764,7 @@ a:hover{color:#06c}
 
 /*标准色—红色*/
 .c-red,.c-red a,a.c-red{color:red}
-.c-red a:hover,a.c-red:hover{ color:#red}
+.c-red a:hover,a.c-red:hover{ color:red}
 /*标准色—绿色*/
 .c-green,.c-green a,a.c-green{color:green}
 .c-red a:hover,a.c-red:hover{color:green}

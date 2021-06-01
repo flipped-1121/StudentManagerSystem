@@ -4,7 +4,7 @@ import java.io.InputStream;
 
 public class Teacher {
 	private int id;
-	private String sn;//教师工号
+	private String sn;  // 教师工号
 	private String name;
 	private String password;
 	private int clazzId;

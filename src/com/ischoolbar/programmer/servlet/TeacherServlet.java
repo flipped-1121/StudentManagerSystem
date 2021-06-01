@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.ischoolbar.programmer.dao.TeacherDao;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Teacher;
-import com.ischoolbar.programmer.util.SnGenerateUtil;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -46,8 +45,10 @@ public class TeacherServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-	
+
+	// 添加教师信息
 	private void addTeacher(HttpServletRequest request,HttpServletResponse response){
+    	String sn = request.getParameter("sn");
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
 		String sex = request.getParameter("sex");
@@ -61,7 +62,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setPassword(password);
 		teacher.setSex(sex);
 		teacher.setQq(qq);
-		teacher.setSn(SnGenerateUtil.generateTeacherSn(clazzId));
+		teacher.setSn(sn);
 		TeacherDao teacherDao = new TeacherDao();
 		if(teacherDao.addTeacher(teacher)){
 			try {
@@ -75,9 +76,9 @@ public class TeacherServlet extends HttpServlet {
 		}
 		
 	}
-	
+
+	// 删除教师信息
 	private void deleteTeacher(HttpServletRequest request,HttpServletResponse response){
-		
 		String[] ids = request.getParameterValues("ids[]");
 		String idStr = "";
 		for(String id:ids){
@@ -96,9 +97,10 @@ public class TeacherServlet extends HttpServlet {
 			}
 		}
 	}
-	
+
+	// 编辑教师表
 	private void editTeacher(HttpServletRequest request,HttpServletResponse response){
-		
+		String sn = request.getParameter("sn");
 		String name = request.getParameter("name");
 		int id = Integer.parseInt(request.getParameter("id"));
 		String sex = request.getParameter("sex");
@@ -113,6 +115,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setId(id);
 		teacher.setQq(qq);
 		teacher.setSex(sex);
+		teacher.setSn(sn);
 		
 		TeacherDao teacherDao = new TeacherDao();		
 		if(teacherDao.editTeacher(teacher)){
@@ -163,7 +166,6 @@ public class TeacherServlet extends HttpServlet {
 		}
 	}
 	private void teacherList(HttpServletRequest request,HttpServletResponse response){
-		
 		try {
 			request.getRequestDispatcher("view/teacherList.jsp").forward(request, response);
 		} catch (ServletException e) {

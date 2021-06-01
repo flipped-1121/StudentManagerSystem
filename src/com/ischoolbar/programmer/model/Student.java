@@ -9,8 +9,10 @@ public class Student {
     private String password;  // 密码
     private int clazzId;
     private String sex = "男";  // 性别
+    private String birth;  // 出生年月
     private String mobile;  // 手机号码
     private String dep;  // 所在院系
+    private String nat;  // 籍贯
     private InputStream photo;  // 头像
 
     public int getId() {
@@ -44,6 +46,13 @@ public class Student {
     public void setSex(String sex) {
         this.sex = sex;
     }
+    public String getBirth() {
+        return birth;
+    }
+
+    public void setBirth(String birth) {
+        this.birth = birth;
+    }
 
     public String getMobile() {
         return mobile;
@@ -53,13 +62,12 @@ public class Student {
         this.mobile = mobile;
     }
 
-    public String getDep() {
-        return dep;
-    }
+    public String getNat() { return nat; }
 
-    public void setDep(String dep) {
-        this.dep = dep;
-    }
+    public void setNat(String nat) { this.nat = nat; }
+    public String getDep() { return dep; }
+
+    public void setDep(String dep) { this.dep = dep; }
 
     public InputStream getPhoto() {
         return photo;

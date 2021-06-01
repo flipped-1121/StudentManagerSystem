@@ -37,6 +37,7 @@ public class LoginServlet extends HttpServlet {
 		}
 		String vcode = request.getParameter("vcode");
 		String name = request.getParameter("account");
+		String sn = request.getParameter("account");
 		String password = request.getParameter("password");
 		int type = Integer.parseInt(request.getParameter("type"));
 		String loginCpacha = request.getSession().getAttribute("loginCapcha").toString();
@@ -48,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 			response.getWriter().write("vcodeError");
 			return;
 		}
-		//验证码验证通过，对比用户名密码是否正确
+		// 验证码验证通过，对比用户名密码是否正确
 		String loginStatus = "loginFaild";
 		switch (type) {
 			case 1:{
@@ -67,7 +68,7 @@ public class LoginServlet extends HttpServlet {
 			}
 			case 2:{
 				StudentDao studentDao = new StudentDao();
-				Student student = studentDao.login(name, password);
+				Student student = studentDao.login(sn, password);
 				studentDao.closeCon();
 				if(student == null){
 					response.getWriter().write("loginError");
@@ -81,7 +82,7 @@ public class LoginServlet extends HttpServlet {
 			}
 			case 3:{
 				TeacherDao teahcerDao = new TeacherDao();
-				Teacher teacher = teahcerDao.login(name, password);
+				Teacher teacher = teahcerDao.login(sn, password);
 				teahcerDao.closeCon();
 				if(teacher == null){
 					response.getWriter().write("loginError");

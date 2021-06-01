@@ -29,14 +29,17 @@
                 sortName: 'id',
                 sortOrder: 'DESC',
                 remoteSort: false,
+                // 学生属性
                 columns: [[
                     {field: 'chk', checkbox: true, width: 50},
                     {field: 'id', title: 'ID', width: 50, sortable: true},
-                    {field: 'sn', title: '学号', width: 200, sortable: true},
-                    {field: 'name', title: '姓名', width: 200},
-                    {field: 'sex', title: '性别', width: 100},
+                    {field: 'sn', title: '学号', width: 100, sortable: true},
+                    {field: 'name', title: '姓名', width: 100},
+                    {field: 'sex', title: '性别', width: 50},
+                    {field: 'birth', title: '出生年月', width: 100},
                     {field: 'mobile', title: '电话', width: 150},
-                    {field: 'dep', title: '所在院系', width: 300},
+                    {field: 'nat', title: '籍贯', width: 150},
+                    {field: 'dep', title: '所在院系', width: 280},
                     {
                         field: 'clazz_id', title: '班级', width: 150,
                         formatter: function (value, row, index) {
@@ -232,8 +235,10 @@
                                             $("#add_number").textbox('setValue', "");
                                             $("#add_name").textbox('setValue', "");
                                             $("#add_sex").textbox('setValue', "男");
+                                            $("#add_birth").textbox('setValue', "");
                                             $("#add_phone").textbox('setValue', "");
                                             $("#add_dep").textbox('setValue', "");
+                                            $("#add_nat").textbox('setValue', "");
 
                                             //重新刷新页面数据
                                             $('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
@@ -259,8 +264,10 @@
                             $("#add_sn").textbox('setValue', "");
                             $("#add_number").textbox('setValue', "");
                             $("#add_name").textbox('setValue', "");
+                            $("#add_birth").textbox('setValue', "");
                             $("#add_phone").textbox('setValue', "");
                             $("#add_dep").textbox('setValue', "");
+                            $("#add_nat").textbox('setValue', "");
                             //重新加载年级
                             $("#add_gradeList").combobox("clear");
                             $("#add_gradeList").combobox("reload");
@@ -329,8 +336,10 @@
                             $("#edit_sn").textbox('setValue', "");
                             $("#edit_name").textbox('setValue', "");
                             $("#edit_sex").textbox('setValue', "男");
+                            $("#edit_birth").textbox('setValue', "");
                             $("#edit_phone").textbox('setValue', "");
                             $("#edit_dep").textbox('setValue', "");
+                            $("#edit_nat").textbox('setValue', "");
                             $("#edit_gradeList").combobox("clear");
                             $("#edit_gradeList").combobox("reload");
                         }
@@ -342,8 +351,10 @@
                     $("#edit_sn").textbox('setValue', selectRow.sn);
                     $("#edit_name").textbox('setValue', selectRow.name);
                     $("#edit_sex").textbox('setValue', selectRow.sex);
+                    $("#edit_birth").textbox('setValue', selectRow.birth);
                     $("#edit_mobile").textbox('setValue', selectRow.mobile);
                     $("#edit_dep").textbox('setValue', selectRow.dep);
+                    $("#edit_nat").textbox('setValue', selectRow.nat);
                     $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid=" + selectRow.id);
                     $("#edit-id").val(selectRow.id);
                     $("#set-photo-id").val(selectRow.id);
@@ -447,9 +458,19 @@
                 </select></td>
             </tr>
             <tr>
+                <td>出生年月:</td>
+                <td><input id="add_birth" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
+                           name="birth" validType=""/></td>
+            </tr>
+            <tr>
                 <td>电话:</td>
                 <td><input id="add_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
                            name="mobile" validType="mobile"/></td>
+            </tr>
+            <tr>
+                <td>籍贯:</td>
+                <td><input id="add_nat" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
+                           name="nat" validType=""/></td>
             </tr>
             <tr>
                 <td>所在院系:</td>
@@ -500,9 +521,19 @@
                 </select></td>
             </tr>
             <tr>
+                <td>出生年月:</td>
+                <td><input id="edit_birth" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
+                           name="birth" validType=""/></td>
+            </tr>
+            <tr>
                 <td>电话:</td>
                 <td><input id="edit_mobile" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
                            name="mobile" validType="mobile"/></td>
+            </tr>
+            <tr>
+                <td>籍贯:</td>
+                <td><input id="edit_nat" style="width: 200px; height: 30px;" class="easyui-textbox" type="text"
+                           name="nat" validType=""/></td>
             </tr>
             <tr>
                 <td>所在院系:</td>

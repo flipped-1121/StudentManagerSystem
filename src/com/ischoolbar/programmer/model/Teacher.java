@@ -10,7 +10,7 @@ public class Teacher {
 	private int clazzId;
 	private String sex;
 	private String mobile;
-	private String qq;
+	private String dep;
 	private InputStream photo;
 	public int getId() {
 		return id;
@@ -55,11 +55,11 @@ public class Teacher {
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
-	public String getQq() {
-		return qq;
+	public String getDep() {
+		return dep;
 	}
-	public void setQq(String qq) {
-		this.qq = qq;
+	public void setDep(String dep) {
+		this.dep = dep;
 	}
 	public InputStream getPhoto() {
 		return photo;

@@ -15,9 +15,9 @@ public class StudentDao extends BaseDao {
     // 添加操作
     public boolean addStudent(Student student) {
         String sql = "insert into s_student values(null,'" + student.getSn() + "','" + student.getName() + "'";
-        sql += ",'" + student.getPassword() + "'," + student.getClazzId();
-        sql += ",'" + student.getSex() + "','" + student.getMobile() + "'";
-        sql += ",'" + student.getDep() + "',null)";
+        sql += ",'" + student.getPassword() + "','" + student.getClazzId() + "'";
+        sql += ",'" + student.getSex() + "','" + student.getBirth() + "','" + student.getMobile() + "'";
+        sql += ",'" + student.getNat() + "','" + student.getNat() + "',null)";
         return update(sql);
     }
 
@@ -27,8 +27,10 @@ public class StudentDao extends BaseDao {
         String sql = "update s_student set sn = '" + student.getSn() + "'";
         sql += ",name = '" + student.getName() + "'";
         sql += ",sex = '" + student.getSex() + "'";
+        sql += ",birth = '" + student.getBirth() + "'";
         sql += ",mobile = '" + student.getMobile() + "'";
         sql += ",dep = '" + student.getDep() + "'";
+        sql += ",nat = '" + student.getNat() + "'";
         sql += ",clazz_id = " + student.getClazzId();
         sql += " where id = " + student.getId();
         return update(sql);
@@ -67,11 +69,13 @@ public class StudentDao extends BaseDao {
                 student = new Student();
                 student.setId(resultSet.getInt("id"));
                 student.setClazzId(resultSet.getInt("clazz_id"));
+                student.setBirth(resultSet.getString("birth"));
                 student.setMobile(resultSet.getString("mobile"));
                 student.setName(resultSet.getString("name"));
                 student.setPassword(resultSet.getString("password"));
                 student.setPhoto(resultSet.getBinaryStream("photo"));
                 student.setDep(resultSet.getString("dep"));
+                student.setNat(resultSet.getString("nat"));
                 student.setSex(resultSet.getString("sex"));
                 student.setSn(resultSet.getString("sn"));
                 return student;
@@ -102,11 +106,13 @@ public class StudentDao extends BaseDao {
                 Student s = new Student();
                 s.setId(resultSet.getInt("id"));
                 s.setClazzId(resultSet.getInt("clazz_id"));
+                s.setBirth(resultSet.getString("birth"));
                 s.setMobile(resultSet.getString("mobile"));
                 s.setName(resultSet.getString("name"));
                 s.setPassword(resultSet.getString("password"));
                 s.setPhoto(resultSet.getBinaryStream("photo"));
                 s.setDep(resultSet.getString("dep"));
+                s.setNat(resultSet.getString("nat"));
                 s.setSex(resultSet.getString("sex"));
                 s.setSn(resultSet.getString("sn"));
                 ret.add(s);
@@ -142,8 +148,8 @@ public class StudentDao extends BaseDao {
         return total;
     }
 
-    public Student login(String name, String password) {
-        String sql = "select * from s_student where name = '" + name + "' and password = '" + password + "'";
+    public Student login(String sn, String password) {
+        String sql = "select * from s_student where sn = '" + sn + "' and password = '" + password + "'";
         ResultSet resultSet = query(sql);
         try {
             if (resultSet.next()) {
@@ -152,9 +158,11 @@ public class StudentDao extends BaseDao {
                 student.setName(resultSet.getString("name"));
                 student.setPassword(resultSet.getString("password"));
                 student.setClazzId(resultSet.getInt("clazz_id"));
+                student.setBirth(resultSet.getString("birth"));
                 student.setMobile(resultSet.getString("mobile"));
                 student.setPhoto(resultSet.getBinaryStream("photo"));
                 student.setDep(resultSet.getString("dep"));
+                student.setNat(resultSet.getString("nat"));
                 student.setSex(resultSet.getString("sex"));
                 student.setSn(resultSet.getString("sn"));
                 return student;

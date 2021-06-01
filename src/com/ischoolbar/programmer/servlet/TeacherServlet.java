@@ -53,7 +53,7 @@ public class TeacherServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		String sex = request.getParameter("sex");
 		String mobile = request.getParameter("mobile");
-		String qq = request.getParameter("qq");
+		String dep = request.getParameter("dep");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
 		Teacher teacher = new Teacher();
 		teacher.setClazzId(clazzId);
@@ -61,7 +61,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setName(name);
 		teacher.setPassword(password);
 		teacher.setSex(sex);
-		teacher.setQq(qq);
+		teacher.setDep(dep);
 		teacher.setSn(sn);
 		TeacherDao teacherDao = new TeacherDao();
 		if(teacherDao.addTeacher(teacher)){
@@ -105,7 +105,7 @@ public class TeacherServlet extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		String sex = request.getParameter("sex");
 		String mobile = request.getParameter("mobile");
-		String qq = request.getParameter("qq");
+		String dep = request.getParameter("dep");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
 		
 		Teacher teacher = new Teacher();
@@ -113,7 +113,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setMobile(mobile);
 		teacher.setName(name);
 		teacher.setId(id);
-		teacher.setQq(qq);
+		teacher.setDep(dep);
 		teacher.setSex(sex);
 		teacher.setSn(sn);
 		

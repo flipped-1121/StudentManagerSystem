@@ -80,7 +80,7 @@
                         },
                     ]
                 },
-                {
+               /* {
                     "menuid": "8", "icon": "", "menuname": "考勤信息管理",
                     "menus": [
                         {
@@ -103,8 +103,8 @@
                         },
                     ]
                 },
-                </c:if>
-                {
+                </c:if>*/
+               /* {
                     "menuid": "10", "icon": "", "menuname": "成绩信息管理",
                     "menus": [
                         {
@@ -113,16 +113,16 @@
                             "icon": "icon-grade-list",
                             "url": "ScoreServlet?method=toScoreListView"
                         },
-                        <c:if test="${userType == 1 || userType == 3}">
+<%--                        <c:if test="${userType == 1 || userType == 3}">--%>
                         {
                             "menuid": "101",
                             "menuname": "成绩统计",
                             "icon": "icon-grade-statistics",
                             "url": "ScoreServlet?method=toScoreStatsView"
                         },
-                        </c:if>
+<%--                        </c:if>--%>
                     ]
-                },
+                },*/
                 {
                     "menuid": "5", "icon": "", "menuname": "系统管理",
                     "menus": [

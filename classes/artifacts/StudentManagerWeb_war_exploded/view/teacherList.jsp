@@ -38,8 +38,8 @@
                     {field: 'name', title: '姓名', width: 150},
                     {field: 'sex', title: '性别', width: 100},
                     {field: 'mobile', title: '电话', width: 150},
-                    {field: 'qq', title: 'QQ', width: 150},
-                    {field:'clazz_id',title:'班级',width:150,
+                    {field: 'dep', title: '所在院系', width: 300},
+                    /*{field:'clazz_id',title:'班级',width:150,
                         formatter: function (value, row, index) {
                             if (row.clazzId) {
                                 var clazzList = $("#clazzList").combobox("getData");
@@ -52,7 +52,7 @@
                                 return 'not found';
                             }
                         }
-                    }
+                    }*/
                 ]],
                 toolbar: "#toolbar",
                 onBeforeLoad: function () {
@@ -167,7 +167,7 @@
                                 var name = $("#add_name").textbox("getText");
                                 var sex = $("#add_sex").textbox("getText");
                                 var phone = $("#add_phone").textbox("getText");
-                                var qq = $("#add_qq").textbox("getText");
+                                var dep = $("#add_dep").textbox("getText");
                                 var password = $("#add_password").textbox("getText");
                                 var data = {
                                     clazzid: clazzid,
@@ -175,7 +175,7 @@
                                     name: name,
                                     sex: sex,
                                     mobile: phone,
-                                    qq: qq,
+                                    dep: dep,
                                     password: password
                                 };
 
@@ -194,7 +194,7 @@
                                             $("#add_name").textbox('setValue', "");
                                             $("#add_sex").textbox('setValue', "男");
                                             $("#add_phone").textbox('setValue', "");
-                                            $("#add_qq").textbox('setValue', "");
+                                            $("#add_dep").textbox('setValue', "");
                                             $(table).find(".chooseTr").remove();
 
                                             //重新刷新页面数据
@@ -218,7 +218,7 @@
                             $("#add_sn").textbox('setValue', "");
                             $("#add_name").textbox('setValue', "");
                             $("#add_phone").textbox('setValue', "");
-                            $("#add_qq").textbox('setValue', "");
+                            $("#add_dep").textbox('setValue', "");
 
                             $(table).find(".chooseTr").remove();
 
@@ -230,7 +230,7 @@
                     $("#add_sn").textbox('setValue', "");
                     $("#add_name").textbox('setValue', "");
                     $("#add_phone").textbox('setValue', "");
-                    $("#add_qq").textbox('setValue', "");
+                    $("#add_dep").textbox('setValue', "");
 
                     $(table).find(".chooseTr").remove();
                 }
@@ -298,8 +298,8 @@
                                 var name = $("#edit_name").textbox("getText");
                                 var sex = $("#edit_sex").textbox("getText");
                                 var phone = $("#edit_phone").textbox("getText");
-                                var qq = $("#edit_qq").textbox("getText");
-                                var data = {id: id, clazzid: clazzid, sn: sn, name: name, sex: sex, mobile: phone, qq: qq};
+                                var dep = $("#edit_dep").textbox("getText");
+                                var data = {id: id, clazzid: clazzid, sn: sn, name: name, sex: sex, mobile: phone, dep: dep};
 
                                 $.ajax({
                                     type: "post",
@@ -315,7 +315,7 @@
                                             $("#edit_sn").textbox('setValue', "");
                                             $("#edit_sex").textbox('setValue', "男");
                                             $("#edit_phone").textbox('setValue', "");
-                                            $("#edit_qq").textbox('setValue', "");
+                                            $("#edit_dep").textbox('setValue', "");
 
                                             //重新刷新页面数据
                                             $('#dataList').datagrid("reload");
@@ -338,7 +338,7 @@
                             $("#edit_sn").textbox('setValue', "");
                             $("#edit_name").textbox('setValue', "");
                             $("#edit_phone").textbox('setValue', "");
-                            $("#edit_qq").textbox('setValue', "");
+                            $("#edit_dep").textbox('setValue', "");
 
                             $(table).find(".chooseTr").remove();
 
@@ -352,7 +352,7 @@
                     $("#edit_sn").textbox('setValue', selectRow.sn);
                     $("#edit_sex").textbox('setValue', selectRow.sex);
                     $("#edit_phone").textbox('setValue', selectRow.mobile);
-                    $("#edit_qq").textbox('setValue', selectRow.qq);
+                    $("#edit_dep").textbox('setValue', selectRow.dep);
                     $("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&tid=" + selectRow.id);
                     $("#set-photo-id").val(selectRow.id);
                     var clazzid = selectRow.clazzId;
@@ -364,7 +364,7 @@
                     $("#edit_name").textbox('setValue', "");
                     $("#edit_sn").textbox('setValue', "");
                     $("#edit_phone").textbox('setValue', "");
-                    $("#edit_qq").textbox('setValue', "");
+                    $("#edit_dep").textbox('setValue', "");
                 }
             });
 
@@ -433,7 +433,7 @@
     </div>
     <form id="addForm" method="post">
         <table id="addTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6">
-            <tr>
+            <tr style="display: none">
                 <td style="width:40px">班级:</td>
                 <td colspan="3">
                     <input id="add_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" />
@@ -472,9 +472,9 @@
                                        type="text" name="phone" validType="mobile"/></td>
             </tr>
             <tr>
-                <td>QQ:</td>
-                <td colspan="4"><input id="add_qq" style="width: 200px; height: 30px;" class="easyui-textbox"
-                                       type="text" name="qq" validType="number"/></td>
+                <td>所在院系:</td>
+                <td colspan="4"><input id="add_dep" style="width: 200px; height: 30px;" class="easyui-textbox"
+                                       type="text" name="dep" validType=""/></td>
             </tr>
         </table>
     </form>
@@ -496,7 +496,7 @@
     </div>
     <form id="editForm" method="post">
         <table id="editTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6">
-            <tr>
+            <tr style="display: none">
                 <td style="width:40px">班级:</td>
                 <td colspan="3">
                     <input id="edit_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" />
@@ -527,9 +527,9 @@
                            name="phone" validType="mobile"/></td>
             </tr>
             <tr>
-                <td>QQ:</td>
-                <td colspan="4"><input id="edit_qq" style="width: 200px; height: 30px;" class="easyui-textbox"
-                                       type="text" name="qq" validType="number"/></td>
+                <td>所在院系:</td>
+                <td colspan="4"><input id="edit_dep" style="width: 200px; height: 30px;" class="easyui-textbox"
+                                       type="text" name="dep" validType=""/></td>
             </tr>
         </table>
     </form>

@@ -109,7 +109,7 @@
     <servlet-name>CourseServlet</servlet-name>
     <url-pattern>/CourseServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
+<!--  <servlet>
     <description>学生选课</description>
     <display-name>SelectedCourseServlet</display-name>
     <servlet-name>SelectedCourseServlet</servlet-name>
@@ -118,8 +118,8 @@
   <servlet-mapping>
     <servlet-name>SelectedCourseServlet</servlet-name>
     <url-pattern>/SelectedCourseServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
+  </servlet-mapping>-->
+<!--  <servlet>
     <description>考勤信息管理</description>
     <display-name>AttendanceServlet</display-name>
     <servlet-name>AttendanceServlet</servlet-name>
@@ -128,8 +128,8 @@
   <servlet-mapping>
     <servlet-name>AttendanceServlet</servlet-name>
     <url-pattern>/AttendanceServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
+  </servlet-mapping>-->
+<!--  <servlet>
     <description>请假信息管理</description>
     <display-name>LeaveServlet</display-name>
     <servlet-name>LeaveServlet</servlet-name>
@@ -138,8 +138,8 @@
   <servlet-mapping>
     <servlet-name>LeaveServlet</servlet-name>
     <url-pattern>/LeaveServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
+  </servlet-mapping>-->
+<!--  <servlet>
     <description>学生成绩管理</description>
     <display-name>ScoreServlet</display-name>
     <servlet-name>ScoreServlet</servlet-name>
@@ -148,5 +148,5 @@
   <servlet-mapping>
     <servlet-name>ScoreServlet</servlet-name>
     <url-pattern>/ScoreServlet</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping>-->
 </web-app>

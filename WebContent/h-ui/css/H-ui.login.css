@@ -49,11 +49,11 @@ body {
 
 .loginBox {
     position: absolute;
-    width: 617px;
-    height: 330px;
+    width: 417px;
+    height: 430px;
     left: 50%;
-    top: 50%;
-    margin-left: -309px;
+    top: 43%;
+    margin-left: -178px;
     margin-top: -184px;
     padding-top: 38px;
     border-radius: 25px;
@@ -70,6 +70,7 @@ body {
 
 .loginBox .row {
     margin-top: 20px;
+    margin-bottom: 31px
 }
 
 .loginBox .row .form-label .Hui-iconfont {
@@ -144,4 +145,141 @@ body {
 
 #ie6-warning a {
     text-decoration: none
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.inputrow {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.inputrow:first-child {
+    padding: 0px 0px;
+}
+
+.inputrow span {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px;
+}
+
+.gate {
+    display: inline-block;
+    width: 253px;
+    padding: 10px 0 10px 15px;
+    font-family: "Open Sans", sans;
+    font-weight: 400;
+    /*color: #377D6A;*/
+    background: #efefef;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    text-indent: 65px;
+    transition: all .3s ease-in-out;
+}
+
+.gate:focus {
+    border: solid 1px #1E90FF;
+}
+
+.gate::-webkit-input-placeholder {
+    color: #efefef;
+    text-indent: 0;
+    font-weight: 300;
+}
+
+.gate + label {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 15px;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+    /*background: #7AB893;*/
+    transition: all .4s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: left bottom;
+    z-index: 99;
+}
+
+.gate + label:before, .gate + label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+    background: #3097df;
+    transform-origin: left bottom;
+    transition: all .4s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.gate + label:before {
+    background: rgba(3, 36, 41, 0.2);
+    z-index: -2;
+    right: 20%;
+}
+
+span:nth-child(2) .gate {
+    text-indent: 85px;
+}
+
+span:nth-child(2) .gate:focus,
+span:nth-child(2) .gate:active {
+    text-indent: 0;
+}
+
+.gate:focus,
+.gate:active {
+    color: #377D6A;
+    text-indent: 0;
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.gate:focus::-webkit-input-placeholder,
+.gate:active::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+.gate:focus + label,
+.gate:active + label {
+    transform: rotate(-66deg);
+    border-radius: 3px;
+}
+
+.gate:focus + label:before,
+.gate:active + label:before {
+    transform: rotate(10deg);
+}
+#footer {
+    width: 100%;
+    color: black;
+    float: left;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    /* background-color: blue; */
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer a:hover {
+    color: rgb(0, 81, 255);
 }

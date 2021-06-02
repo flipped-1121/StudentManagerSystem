@@ -1,0 +1,750 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 C059-089E
+F:.
+│  .classpath
+│  .project
+│  FileTree.txt
+│  StudentManagerWeb.iml
+│  
+├─.idea
+│  │  .gitignore
+│  │  dataSources.local.xml
+│  │  dataSources.xml
+│  │  encodings.xml
+│  │  misc.xml
+│  │  modules.xml
+│  │  sqldialects.xml
+│  │  vcs.xml
+│  │  webContexts.xml
+│  │  workspace.xml
+│  │  
+│  ├─artifacts
+│  │      StudentManagerSystem.xml
+│  │      StudentManagerWeb_war_exploded.xml
+│  │      
+│  ├─codeStyles
+│  │      codeStyleConfig.xml
+│  │      
+│  ├─dataSources
+│  │  │  fd7d475f-5e24-4e08-810c-c536ad7b32b8.xml
+│  │  │  
+│  │  └─fd7d475f-5e24-4e08-810c-c536ad7b32b8
+│  │      └─storage_v2
+│  │          └─_src_
+│  │              └─schema
+│  │                      information_schema.FNRwLQ.meta
+│  │                      
+│  ├─inspectionProfiles
+│  │      Project_Default.xml
+│  │      
+│  └─libraries
+│          commons_beanutils_1_8_0.xml
+│          Java_EE_6_Java_EE_6.xml
+│          
+├─.settings
+│      .jsdtscope
+│      org.eclipse.jdt.core.prefs
+│      org.eclipse.wst.common.component
+│      org.eclipse.wst.common.project.facet.core.xml
+│      org.eclipse.wst.jsdt.ui.superType.container
+│      org.eclipse.wst.jsdt.ui.superType.name
+│      
+├─build
+│  └─classes
+│      └─com
+│          └─ischoolbar
+│              └─programmer
+│                  ├─dao
+│                  │      AdminDao.class
+│                  │      BaseDao.class
+│                  │      ClazzDao.class
+│                  │      CourseDao.class
+│                  │      ScoreDao.class
+│                  │      SelectedCourseDao.class
+│                  │      StudentDao.class
+│                  │      TeacherDao.class
+│                  │      
+│                  ├─filter
+│                  │      LoginFilter.class
+│                  │      
+│                  ├─model
+│                  │      Admin.class
+│                  │      Clazz.class
+│                  │      Course.class
+│                  │      Page.class
+│                  │      Score.class
+│                  │      SelectedCourse.class
+│                  │      Student.class
+│                  │      Teacher.class
+│                  │      
+│                  ├─servlet
+│                  │      ClazzServlet.class
+│                  │      CourseServlet.class
+│                  │      CpachaServlet.class
+│                  │      LoginServlet.class
+│                  │      PhotoServlet.class
+│                  │      ScoreServlet.class
+│                  │      SelectedCourseServlet.class
+│                  │      StudentServlet.class
+│                  │      SystemServlet.class
+│                  │      TeacherServlet.class
+│                  │      
+│                  └─util
+│                          CpachaUtil.class
+│                          DateFormatUtil.class
+│                          DbUtil.class
+│                          StringUtil.class
+│                          
+├─classes
+│  └─artifacts
+│      ├─StudentManagerSystem
+│      │      StudentManagerSystem.war
+│      │      
+│      └─StudentManagerWeb_war_exploded
+│          │  404.jsp
+│          │  500.jsp
+│          │  favicon.ico
+│          │  index.jsp
+│          │  
+│          ├─easyui
+│          │  │  jquery.easyui.min.js
+│          │  │  jquery.min.js
+│          │  │  
+│          │  ├─css
+│          │  │      default.css
+│          │  │      demo.css
+│          │  │      
+│          │  ├─js
+│          │  │      echarts.common.min.js
+│          │  │      outlook2.js
+│          │  │      validateExtends.js
+│          │  │      
+│          │  └─themes
+│          │      │  color.css
+│          │      │  icon.css
+│          │      │  
+│          │      ├─default
+│          │      │  │  accordion.css
+│          │      │  │  calendar.css
+│          │      │  │  combo.css
+│          │      │  │  combobox.css
+│          │      │  │  datagrid.css
+│          │      │  │  datalist.css
+│          │      │  │  datebox.css
+│          │      │  │  dialog.css
+│          │      │  │  easyui.css
+│          │      │  │  filebox.css
+│          │      │  │  layout.css
+│          │      │  │  linkbutton.css
+│          │      │  │  menu.css
+│          │      │  │  menubutton.css
+│          │      │  │  messager.css
+│          │      │  │  numberbox.css
+│          │      │  │  pagination.css
+│          │      │  │  panel.css
+│          │      │  │  progressbar.css
+│          │      │  │  propertygrid.css
+│          │      │  │  searchbox.css
+│          │      │  │  slider.css
+│          │      │  │  spinner.css
+│          │      │  │  splitbutton.css
+│          │      │  │  tabs.css
+│          │      │  │  textbox.css
+│          │      │  │  tooltip.css
+│          │      │  │  tree.css
+│          │      │  │  validatebox.css
+│          │      │  │  window.css
+│          │      │  │  
+│          │      │  └─images
+│          │      │          accordion_arrows.png
+│          │      │          blank.gif
+│          │      │          calendar_arrows.png
+│          │      │          combo_arrow.png
+│          │      │          datagrid_icons.png
+│          │      │          datebox_arrow.png
+│          │      │          layout_arrows.png
+│          │      │          linkbutton_bg.png
+│          │      │          loading.gif
+│          │      │          menu_arrows.png
+│          │      │          messager_icons.png
+│          │      │          pagination_icons.png
+│          │      │          panel_tools.png
+│          │      │          searchbox_button.png
+│          │      │          slider_handle.png
+│          │      │          spinner_arrows.png
+│          │      │          tabs_icons.png
+│          │      │          tree_icons.png
+│          │      │          validatebox_warning.png
+│          │      │          
+│          │      ├─icons
+│          │      │      2012080412263.png
+│          │      │      asterisk_orange.png
+│          │      │      back.png
+│          │      │      basket_remove.png
+│          │      │      blank.gif
+│          │      │      book_add.png
+│          │      │      book_open_mark.png
+│          │      │      book_previous.png
+│          │      │      cancel.png
+│          │      │      chart_bar.png
+│          │      │      clear.png
+│          │      │      cut.png
+│          │      │      door_out.png
+│          │      │      edit_add.png
+│          │      │      edit_remove.png
+│          │      │      filesave.png
+│          │      │      filter.png
+│          │      │      find.png
+│          │      │      folder_up.png
+│          │      │      help.png
+│          │      │      house.png
+│          │      │      icon-ask-leave.png
+│          │      │      icon-checking-in.png
+│          │      │      icon-grade-list.png
+│          │      │      icon-grade-statistics.png
+│          │      │      icon-select-course.png
+│          │      │      icon_teacher.png
+│          │      │      large_chart.png
+│          │      │      large_clipart.png
+│          │      │      large_picture.png
+│          │      │      large_shapes.png
+│          │      │      large_smartart.png
+│          │      │      lock.png
+│          │      │      man.png
+│          │      │      mini_add.png
+│          │      │      mini_edit.png
+│          │      │      mini_refresh.png
+│          │      │      more.png
+│          │      │      no.png
+│          │      │      note.png
+│          │      │      ok.png
+│          │      │      pencil.png
+│          │      │      pencil_add.png
+│          │      │      print.png
+│          │      │      redo.png
+│          │      │      reload.png
+│          │      │      search.png
+│          │      │      set.png
+│          │      │      sum.png
+│          │      │      tabicons.png
+│          │      │      text_list_bullets.png
+│          │      │      text_list_numbers.png
+│          │      │      tip.png
+│          │      │      undo.png
+│          │      │      user_add.png
+│          │      │      user_gray.png
+│          │      │      vcard_edit.png
+│          │      │      world.png
+│          │      │      world_add.png
+│          │      │      world_night.png
+│          │      │      zoom_in.png
+│          │      │      
+│          │      └─locale
+│          │              easyui-lang-zh_CN.js
+│          │              
+│          ├─file
+│          │      logo.jpg
+│          │      
+│          ├─h-ui
+│          │  ├─css
+│          │  │      H-ui.css
+│          │  │      H-ui.login.css
+│          │  │      H-ui.min.css
+│          │  │      
+│          │  ├─images
+│          │  │  │  acrossTab-2bak.png
+│          │  │  │  acrossTab-bg.png
+│          │  │  │  acrossTab-close.png
+│          │  │  │  acrossTab.png
+│          │  │  │  admin-login-bg.jpg
+│          │  │  │  admin-loginform-bg.png
+│          │  │  │  hamburger-retina.gif
+│          │  │  │  hamburger.gif
+│          │  │  │  icon-add.png
+│          │  │  │  icon_error_s.png
+│          │  │  │  icon_jt2.png
+│          │  │  │  icon_right_s.png
+│          │  │  │  icon_warning_s.png
+│          │  │  │  layout-browser-hd-bg.gif
+│          │  │  │  loading.gif
+│          │  │  │  loading_072.gif
+│          │  │  │  noscript.gif
+│          │  │  │  sort_asc.png
+│          │  │  │  sort_both.png
+│          │  │  │  sort_desc.png
+│          │  │  │  Thumbs.db
+│          │  │  │  totop.png
+│          │  │  │  user.png
+│          │  │  │  
+│          │  │  └─gq
+│          │  │          admin-login-bg.jpg
+│          │  │          cn.gif
+│          │  │          gj.png
+│          │  │          Thumbs.db
+│          │  │          us.gif
+│          │  │          
+│          │  ├─js
+│          │  │      H-ui.admin.js
+│          │  │      H-ui.js
+│          │  │      wallbgcanvas.js
+│          │  │      
+│          │  ├─lib
+│          │  │  ├─Hui-iconfont
+│          │  │  │  └─1.0.1
+│          │  │  │          demo.html
+│          │  │  │          iconfont.css
+│          │  │  │          iconfont.eot
+│          │  │  │          iconfont.svg
+│          │  │  │          iconfont.ttf
+│          │  │  │          iconfont.woff
+│          │  │  │          
+│          │  │  ├─icheck
+│          │  │  │      aero.png
+│          │  │  │      aero@2x.png
+│          │  │  │      blue.png
+│          │  │  │      blue@2x.png
+│          │  │  │      green.png
+│          │  │  │      green@2x.png
+│          │  │  │      grey.png
+│          │  │  │      grey@2x.png
+│          │  │  │      icheck.css
+│          │  │  │      jquery.icheck.min.js
+│          │  │  │      minimal.png
+│          │  │  │      minimal@2x.png
+│          │  │  │      orange.png
+│          │  │  │      orange@2x.png
+│          │  │  │      pink.png
+│          │  │  │      pink@2x.png
+│          │  │  │      purple.png
+│          │  │  │      purple@2x.png
+│          │  │  │      red.png
+│          │  │  │      red@2x.png
+│          │  │  │      Thumbs.db
+│          │  │  │      yellow.png
+│          │  │  │      yellow@2x.png
+│          │  │  │      
+│          │  │  └─jquery
+│          │  │      └─1.9.1
+│          │  │              jquery.js
+│          │  │              jquery.min.js
+│          │  │              
+│          │  └─skin
+│          │      └─default
+│          │              acrossTab-bg.png
+│          │              acrossTab.png
+│          │              icon_arrow.png
+│          │              skin.css
+│          │              Thumbs.db
+│          │              
+│          ├─META-INF
+│          │      MANIFEST.MF
+│          │      
+│          ├─view
+│          │      clazzList.jsp
+│          │      courseList.jsp
+│          │      login.jsp
+│          │      personalView.jsp
+│          │      scoreList.jsp
+│          │      scoreStats.jsp
+│          │      selectedCourseList.jsp
+│          │      studentList.jsp
+│          │      system.jsp
+│          │      teacherList.jsp
+│          │      welcome.jsp
+│          │      
+│          └─WEB-INF
+│              │  web.xml
+│              │  
+│              ├─classes
+│              │  └─com
+│              │      └─ischoolbar
+│              │          └─programmer
+│              │              ├─dao
+│              │              │      AdminDao.class
+│              │              │      BaseDao.class
+│              │              │      ClazzDao.class
+│              │              │      CourseDao.class
+│              │              │      ScoreDao.class
+│              │              │      SelectedCourseDao.class
+│              │              │      StudentDao.class
+│              │              │      TeacherDao.class
+│              │              │      
+│              │              ├─filter
+│              │              │      LoginFilter.class
+│              │              │      
+│              │              ├─model
+│              │              │      Admin.class
+│              │              │      Clazz.class
+│              │              │      Course.class
+│              │              │      Page.class
+│              │              │      Score.class
+│              │              │      SelectedCourse.class
+│              │              │      Student.class
+│              │              │      Teacher.class
+│              │              │      
+│              │              ├─servlet
+│              │              │      ClazzServlet.class
+│              │              │      CourseServlet.class
+│              │              │      CpachaServlet.class
+│              │              │      LoginServlet.class
+│              │              │      PhotoServlet.class
+│              │              │      ScoreServlet.class
+│              │              │      SelectedCourseServlet.class
+│              │              │      StudentServlet.class
+│              │              │      SystemServlet.class
+│              │              │      TeacherServlet.class
+│              │              │      
+│              │              └─util
+│              │                      CpachaUtil.class
+│              │                      DateFormatUtil.class
+│              │                      DbUtil.class
+│              │                      StringUtil.class
+│              │                      
+│              └─lib
+│                      commons-beanutils-1.8.0.jar
+│                      commons-beanutils-1.8.3.jar
+│                      commons-collections-3.2.1.jar
+│                      commons-dbutils-1.6.jar
+│                      commons-fileupload-1.2.1.jar
+│                      commons-io-1.4.jar
+│                      commons-lang-2.5.jar
+│                      commons-logging-1.1.1.jar
+│                      commons-logging.jar
+│                      ezmorph-1.0.6.jar
+│                      FilelLoad.jar
+│                      json-lib-2.3-jdk15.jar
+│                      jsonplugin-0.34.jar
+│                      jstl.jar
+│                      mysql-connector-java-5.1.7-bin.jar
+│                      poi-3.9.jar
+│                      standard.jar
+│                      
+├─lib
+│      javax.annotation.jar
+│      javax.ejb.jar
+│      javax.jms.jar
+│      javax.persistence.jar
+│      javax.resource.jar
+│      javax.servlet.jar
+│      javax.servlet.jsp.jar
+│      javax.transaction.jar
+│      
+├─src
+│  └─com
+│      └─ischoolbar
+│          └─programmer
+│              ├─dao
+│              │      AdminDao.java
+│              │      BaseDao.java
+│              │      ClazzDao.java
+│              │      CourseDao.java
+│              │      ScoreDao.java
+│              │      SelectedCourseDao.java
+│              │      StudentDao.java
+│              │      TeacherDao.java
+│              │      
+│              ├─filter
+│              │      LoginFilter.java
+│              │      
+│              ├─model
+│              │      Admin.java
+│              │      Clazz.java
+│              │      Course.java
+│              │      Page.java
+│              │      Score.java
+│              │      SelectedCourse.java
+│              │      Student.java
+│              │      Teacher.java
+│              │      
+│              ├─servlet
+│              │      ClazzServlet.java
+│              │      CourseServlet.java
+│              │      CpachaServlet.java
+│              │      LoginServlet.java
+│              │      PhotoServlet.java
+│              │      ScoreServlet.java
+│              │      SelectedCourseServlet.java
+│              │      StudentServlet.java
+│              │      SystemServlet.java
+│              │      TeacherServlet.java
+│              │      
+│              └─util
+│                      CpachaUtil.java
+│                      DateFormatUtil.java
+│                      DbUtil.java
+│                      StringUtil.java
+│                      
+└─WebContent
+    │  404.jsp
+    │  500.jsp
+    │  favicon.ico
+    │  index.jsp
+    │  
+    ├─easyui
+    │  │  jquery.easyui.min.js
+    │  │  jquery.min.js
+    │  │  
+    │  ├─css
+    │  │      default.css
+    │  │      demo.css
+    │  │      
+    │  ├─js
+    │  │      echarts.common.min.js
+    │  │      outlook2.js
+    │  │      validateExtends.js
+    │  │      
+    │  └─themes
+    │      │  color.css
+    │      │  icon.css
+    │      │  
+    │      ├─default
+    │      │  │  accordion.css
+    │      │  │  calendar.css
+    │      │  │  combo.css
+    │      │  │  combobox.css
+    │      │  │  datagrid.css
+    │      │  │  datalist.css
+    │      │  │  datebox.css
+    │      │  │  dialog.css
+    │      │  │  easyui.css
+    │      │  │  filebox.css
+    │      │  │  layout.css
+    │      │  │  linkbutton.css
+    │      │  │  menu.css
+    │      │  │  menubutton.css
+    │      │  │  messager.css
+    │      │  │  numberbox.css
+    │      │  │  pagination.css
+    │      │  │  panel.css
+    │      │  │  progressbar.css
+    │      │  │  propertygrid.css
+    │      │  │  searchbox.css
+    │      │  │  slider.css
+    │      │  │  spinner.css
+    │      │  │  splitbutton.css
+    │      │  │  tabs.css
+    │      │  │  textbox.css
+    │      │  │  tooltip.css
+    │      │  │  tree.css
+    │      │  │  validatebox.css
+    │      │  │  window.css
+    │      │  │  
+    │      │  └─images
+    │      │          accordion_arrows.png
+    │      │          blank.gif
+    │      │          calendar_arrows.png
+    │      │          combo_arrow.png
+    │      │          datagrid_icons.png
+    │      │          datebox_arrow.png
+    │      │          layout_arrows.png
+    │      │          linkbutton_bg.png
+    │      │          loading.gif
+    │      │          menu_arrows.png
+    │      │          messager_icons.png
+    │      │          pagination_icons.png
+    │      │          panel_tools.png
+    │      │          searchbox_button.png
+    │      │          slider_handle.png
+    │      │          spinner_arrows.png
+    │      │          tabs_icons.png
+    │      │          tree_icons.png
+    │      │          validatebox_warning.png
+    │      │          
+    │      ├─icons
+    │      │      2012080412263.png
+    │      │      asterisk_orange.png
+    │      │      back.png
+    │      │      basket_remove.png
+    │      │      blank.gif
+    │      │      book_add.png
+    │      │      book_open_mark.png
+    │      │      book_previous.png
+    │      │      cancel.png
+    │      │      chart_bar.png
+    │      │      clear.png
+    │      │      cut.png
+    │      │      door_out.png
+    │      │      edit_add.png
+    │      │      edit_remove.png
+    │      │      filesave.png
+    │      │      filter.png
+    │      │      find.png
+    │      │      folder_up.png
+    │      │      help.png
+    │      │      house.png
+    │      │      icon-ask-leave.png
+    │      │      icon-checking-in.png
+    │      │      icon-grade-list.png
+    │      │      icon-grade-statistics.png
+    │      │      icon-select-course.png
+    │      │      icon_teacher.png
+    │      │      large_chart.png
+    │      │      large_clipart.png
+    │      │      large_picture.png
+    │      │      large_shapes.png
+    │      │      large_smartart.png
+    │      │      lock.png
+    │      │      man.png
+    │      │      mini_add.png
+    │      │      mini_edit.png
+    │      │      mini_refresh.png
+    │      │      more.png
+    │      │      no.png
+    │      │      note.png
+    │      │      ok.png
+    │      │      pencil.png
+    │      │      pencil_add.png
+    │      │      print.png
+    │      │      redo.png
+    │      │      reload.png
+    │      │      search.png
+    │      │      set.png
+    │      │      sum.png
+    │      │      tabicons.png
+    │      │      text_list_bullets.png
+    │      │      text_list_numbers.png
+    │      │      tip.png
+    │      │      undo.png
+    │      │      user_add.png
+    │      │      user_gray.png
+    │      │      vcard_edit.png
+    │      │      world.png
+    │      │      world_add.png
+    │      │      world_night.png
+    │      │      zoom_in.png
+    │      │      
+    │      └─locale
+    │              easyui-lang-zh_CN.js
+    │              
+    ├─file
+    │      logo.jpg
+    │      
+    ├─h-ui
+    │  ├─css
+    │  │      H-ui.css
+    │  │      H-ui.login.css
+    │  │      H-ui.min.css
+    │  │      
+    │  ├─images
+    │  │  │  acrossTab-2bak.png
+    │  │  │  acrossTab-bg.png
+    │  │  │  acrossTab-close.png
+    │  │  │  acrossTab.png
+    │  │  │  admin-login-bg.jpg
+    │  │  │  admin-loginform-bg.png
+    │  │  │  hamburger-retina.gif
+    │  │  │  hamburger.gif
+    │  │  │  icon-add.png
+    │  │  │  icon_error_s.png
+    │  │  │  icon_jt2.png
+    │  │  │  icon_right_s.png
+    │  │  │  icon_warning_s.png
+    │  │  │  layout-browser-hd-bg.gif
+    │  │  │  loading.gif
+    │  │  │  loading_072.gif
+    │  │  │  noscript.gif
+    │  │  │  sort_asc.png
+    │  │  │  sort_both.png
+    │  │  │  sort_desc.png
+    │  │  │  Thumbs.db
+    │  │  │  totop.png
+    │  │  │  user.png
+    │  │  │  
+    │  │  └─gq
+    │  │          admin-login-bg.jpg
+    │  │          cn.gif
+    │  │          gj.png
+    │  │          Thumbs.db
+    │  │          us.gif
+    │  │          
+    │  ├─js
+    │  │      H-ui.admin.js
+    │  │      H-ui.js
+    │  │      wallbgcanvas.js
+    │  │      
+    │  ├─lib
+    │  │  ├─Hui-iconfont
+    │  │  │  └─1.0.1
+    │  │  │          demo.html
+    │  │  │          iconfont.css
+    │  │  │          iconfont.eot
+    │  │  │          iconfont.svg
+    │  │  │          iconfont.ttf
+    │  │  │          iconfont.woff
+    │  │  │          
+    │  │  ├─icheck
+    │  │  │      aero.png
+    │  │  │      aero@2x.png
+    │  │  │      blue.png
+    │  │  │      blue@2x.png
+    │  │  │      green.png
+    │  │  │      green@2x.png
+    │  │  │      grey.png
+    │  │  │      grey@2x.png
+    │  │  │      icheck.css
+    │  │  │      jquery.icheck.min.js
+    │  │  │      minimal.png
+    │  │  │      minimal@2x.png
+    │  │  │      orange.png
+    │  │  │      orange@2x.png
+    │  │  │      pink.png
+    │  │  │      pink@2x.png
+    │  │  │      purple.png
+    │  │  │      purple@2x.png
+    │  │  │      red.png
+    │  │  │      red@2x.png
+    │  │  │      Thumbs.db
+    │  │  │      yellow.png
+    │  │  │      yellow@2x.png
+    │  │  │      
+    │  │  └─jquery
+    │  │      └─1.9.1
+    │  │              jquery.js
+    │  │              jquery.min.js
+    │  │              
+    │  └─skin
+    │      └─default
+    │              acrossTab-bg.png
+    │              acrossTab.png
+    │              icon_arrow.png
+    │              skin.css
+    │              Thumbs.db
+    │              
+    ├─META-INF
+    │      MANIFEST.MF
+    │      
+    ├─view
+    │      clazzList.jsp
+    │      courseList.jsp
+    │      login.jsp
+    │      personalView.jsp
+    │      scoreList.jsp
+    │      scoreStats.jsp
+    │      selectedCourseList.jsp
+    │      studentList.jsp
+    │      system.jsp
+    │      teacherList.jsp
+    │      welcome.jsp
+    │      
+    └─WEB-INF
+        │  web.xml
+        │  
+        └─lib
+                commons-beanutils-1.8.0.jar
+                commons-beanutils-1.8.3.jar
+                commons-collections-3.2.1.jar
+                commons-dbutils-1.6.jar
+                commons-fileupload-1.2.1.jar
+                commons-io-1.4.jar
+                commons-lang-2.5.jar
+                commons-logging-1.1.1.jar
+                commons-logging.jar
+                ezmorph-1.0.6.jar
+                FilelLoad.jar
+                json-lib-2.3-jdk15.jar
+                jsonplugin-0.34.jar
+                jstl.jar
+                mysql-connector-java-5.1.7-bin.jar
+                poi-3.9.jar
+                standard.jar
+                

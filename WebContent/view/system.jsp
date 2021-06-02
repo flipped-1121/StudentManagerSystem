@@ -69,7 +69,7 @@
                     ]
                 },
                 </c:if>
-                {
+                /*{
                     "menuid": "7", "icon": "", "menuname": "选课信息管理",
                     "menus": [
                         {
@@ -79,7 +79,7 @@
                             "url": "SelectedCourseServlet?method=toSelectedCourseListView"
                         },
                     ]
-                },
+                },*/
                /* {
                     "menuid": "8", "icon": "", "menuname": "考勤信息管理",
                     "menus": [

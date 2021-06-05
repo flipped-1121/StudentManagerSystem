@@ -1,7 +1,6 @@
 package com.ischoolbar.programmer.dao;
 /**
  * 管理员数据封装
- * @author CesareBorgia
  */
 
 import java.sql.ResultSet;

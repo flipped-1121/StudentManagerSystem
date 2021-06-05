@@ -27,7 +27,7 @@ public class DbUtil {
     	if(connection != null)
 			try {
 				connection.close();
-				System.out.println("----------------关闭连接成功----------------");
+				System.out.println("-------------关闭连接成功-------------");
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}

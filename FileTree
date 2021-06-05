@@ -3,7 +3,7 @@
 F:.
 │  .classpath
 │  .project
-│  FileTree.txt
+│  FileTree
 │  StudentManagerWeb.iml
 │  
 ├─.idea
@@ -20,7 +20,6 @@ F:.
 │  │  
 │  ├─artifacts
 │  │      StudentManagerSystem.xml
-│  │      StudentManagerWeb_war_exploded.xml
 │  │      
 │  ├─codeStyles
 │  │      codeStyleConfig.xml
@@ -60,7 +59,6 @@ F:.
 │                  │      ClazzDao.class
 │                  │      CourseDao.class
 │                  │      ScoreDao.class
-│                  │      SelectedCourseDao.class
 │                  │      StudentDao.class
 │                  │      TeacherDao.class
 │                  │      
@@ -73,7 +71,6 @@ F:.
 │                  │      Course.class
 │                  │      Page.class
 │                  │      Score.class
-│                  │      SelectedCourse.class
 │                  │      Student.class
 │                  │      Teacher.class
 │                  │      
@@ -83,8 +80,6 @@ F:.
 │                  │      CpachaServlet.class
 │                  │      LoginServlet.class
 │                  │      PhotoServlet.class
-│                  │      ScoreServlet.class
-│                  │      SelectedCourseServlet.class
 │                  │      StudentServlet.class
 │                  │      SystemServlet.class
 │                  │      TeacherServlet.class
@@ -97,10 +92,7 @@ F:.
 │                          
 ├─classes
 │  └─artifacts
-│      ├─StudentManagerSystem
-│      │      StudentManagerSystem.war
-│      │      
-│      └─StudentManagerWeb_war_exploded
+│      └─StudentManagerSystem
 │          │  404.jsp
 │          │  500.jsp
 │          │  favicon.ico
@@ -346,7 +338,6 @@ F:.
 │          │      personalView.jsp
 │          │      scoreList.jsp
 │          │      scoreStats.jsp
-│          │      selectedCourseList.jsp
 │          │      studentList.jsp
 │          │      system.jsp
 │          │      teacherList.jsp
@@ -365,7 +356,6 @@ F:.
 │              │              │      ClazzDao.class
 │              │              │      CourseDao.class
 │              │              │      ScoreDao.class
-│              │              │      SelectedCourseDao.class
 │              │              │      StudentDao.class
 │              │              │      TeacherDao.class
 │              │              │      
@@ -378,7 +368,6 @@ F:.
 │              │              │      Course.class
 │              │              │      Page.class
 │              │              │      Score.class
-│              │              │      SelectedCourse.class
 │              │              │      Student.class
 │              │              │      Teacher.class
 │              │              │      
@@ -388,8 +377,6 @@ F:.
 │              │              │      CpachaServlet.class
 │              │              │      LoginServlet.class
 │              │              │      PhotoServlet.class
-│              │              │      ScoreServlet.class
-│              │              │      SelectedCourseServlet.class
 │              │              │      StudentServlet.class
 │              │              │      SystemServlet.class
 │              │              │      TeacherServlet.class
@@ -412,6 +399,14 @@ F:.
 │                      commons-logging.jar
 │                      ezmorph-1.0.6.jar
 │                      FilelLoad.jar
+│                      javax.annotation.jar
+│                      javax.ejb.jar
+│                      javax.jms.jar
+│                      javax.persistence.jar
+│                      javax.resource.jar
+│                      javax.servlet.jar
+│                      javax.servlet.jsp.jar
+│                      javax.transaction.jar
 │                      json-lib-2.3-jdk15.jar
 │                      jsonplugin-0.34.jar
 │                      jstl.jar
@@ -439,7 +434,6 @@ F:.
 │              │      ClazzDao.java
 │              │      CourseDao.java
 │              │      ScoreDao.java
-│              │      SelectedCourseDao.java
 │              │      StudentDao.java
 │              │      TeacherDao.java
 │              │      
@@ -452,7 +446,6 @@ F:.
 │              │      Course.java
 │              │      Page.java
 │              │      Score.java
-│              │      SelectedCourse.java
 │              │      Student.java
 │              │      Teacher.java
 │              │      
@@ -462,8 +455,6 @@ F:.
 │              │      CpachaServlet.java
 │              │      LoginServlet.java
 │              │      PhotoServlet.java
-│              │      ScoreServlet.java
-│              │      SelectedCourseServlet.java
 │              │      StudentServlet.java
 │              │      SystemServlet.java
 │              │      TeacherServlet.java
@@ -720,7 +711,6 @@ F:.
     │      personalView.jsp
     │      scoreList.jsp
     │      scoreStats.jsp
-    │      selectedCourseList.jsp
     │      studentList.jsp
     │      system.jsp
     │      teacherList.jsp
